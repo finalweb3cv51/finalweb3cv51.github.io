@@ -3,9 +3,9 @@
 @import "listas.css";
 
 :root {
-  font-family: sans-serif;
+  font-family: Arial;
   --col-active: #4646462c;
-  --color-header: white;
+  --color-header: pink;
   --colorMiNav: white;
 }
 
