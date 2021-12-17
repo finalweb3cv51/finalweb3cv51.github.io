@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport"
+    content="width=device-width,
+       initial-scale=1.0">
+  <title> NUEVO CONTACTO. </title>
+  <style>
+.new {
+      font-size: 350%;
+text-align: center;
+font-family: arial;
+display: block;
+}
+.herramientas {
+      font-size: 120%;
+text-align: center;
+font-family: arial;
+display: block;
+}
+.noc {
+      font-size: 150%;
+text-align: center;
+font-family: arial;
+display: block;
+}
+.newn {
+      font-size: 150%;
+text-align: center;
+font-family: arial;
+display: block;
+}
+.fac {
+      font-size: 150%;
+text-align: center;
+font-family: arial;
+display: block;
+}
+  </style>
+  <script
+    src="https://www.gstatic.com/firebasejs/8.10.0/firebase-app.js"></script>
+  <script
+    src="https://www.gstatic.com/firebasejs/8.10.0/firebase-auth.js"></script>
+  <script
+    src="https://www.gstatic.com/firebasejs/8.10.0/firebase-firestore.js"></script>
+  <script src="js/init.js">
+  </script>
+  <script type="module"
+    src="cmp/mi-nav.js">
+    </script>
+  <script type="module"
+    src="cmp/mi-footer.js">
+    </script>
+  <link rel="stylesheet"
+    href="css/estilos.css">
+</head>
+<body>
+  <body background="ver.jpg"></body>
+  <form name="forma">
+    <mi-nav></mi-nav>
+    <header>
+      <br>
+      <br>
+      <br>
+      <span class=new>
+        <b> <FONT COLOR="white">NUEVO CONTACTO TELEFONICO.</FONT></b>  
+      </span> 
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      
+    </header>
+    <p>
+      <label>
+        <span class=noc>
+           <FONT COLOR="white">NOMBRE COMPLETO.</FONT>
+        <input name="nombre"
+          type="text" required>
+      </label>
+    </span> 
+    </p>
+    <br>
+    <p>
+      <label>
+        <span class=newn>
+          <FONT COLOR="white">NUMERO TELEFONICO.</FONT> 
+        <input name="telefono"
+          type="text" required>
+      </label>
+    </span> 
+    </p>
+    <br>
+    <p>
+      <label>
+        <span class=fac>
+           <FONT COLOR="white">FECHA ACTUAL.</FONT>
+        <input name="fecha"
+          type="date" required>
+      </label>
+    </span> 
+    </p>
+    <br>
+    <br>
+    <br>
+    <div class="herramientas">
+      <a
+        href="alumnos.html">
+        <FONT COLOR="white">CANCELAR</a></FONT>
+      <button type="submit">
+        GUARDAR
+      </button>
+    </div>
+    <mi-footer></mi-footer>
+  </form>
+  <script type="module"
+    src="js/CtrlAlumnoNuevo.js">
+    </script>
+</body>
+</html>
+
