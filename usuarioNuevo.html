@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport"
+    content="width=device-width,
+       initial-scale=1.0">
+  <title>Usuario Nuevo</title>
+  <style>
+    .new {
+      font-size: 350%;
+text-align: center;
+font-family: arial;
+display: block;
+}
+.herramientas {
+      font-size: 150%;
+text-align: center;
+font-family: sans-serif;
+display: block;
+}
+.al {
+      font-size: 150%;
+text-align: center;
+font-family: sans-serif;
+display: block;
+}
+.im {
+      font-size: 150%;
+margin-left: 41.4rem;
+font-family: sans-serif;
+display: block;
+}
+  </style>
+  <script
+    src="https://www.gstatic.com/firebasejs/8.10.0/firebase-app.js">
+    </script>
+  <script
+    src="https://www.gstatic.com/firebasejs/8.10.0/firebase-auth.js">
+    </script>
+  <script
+    src="https://www.gstatic.com/firebasejs/8.10.0/firebase-firestore.js">
+    </script>
+  <script
+    src="https://www.gstatic.com/firebasejs/8.10.0/firebase-storage.js">
+    </script>
+  <script src="js/init.js">
+  </script>
+  <script type="module"
+    src="cmp/mi-nav.js">
+    </script>
+  <script type="module"
+    src="cmp/mi-footer.js">
+    </script>
+  <script type="module"
+    src="cmp/mi-progreso.js">
+    </script>
+  <link rel="stylesheet"
+    href="css/estilos.css">
+</head>
+<body>
+  <body background="noc.jpg"></body>
+  <form name="forma">
+    <mi-nav></mi-nav>
+    <header>
+      <br>
+      <br>
+      <br>
+      <span class=new>
+        <b> <FONT COLOR="white">  CONTACTO NUEVO</FONT></b>  
+         </span>
+      <br>
+      <br>
+      <br>
+      
+    </header>
+    <br>
+    <br>
+    <p>
+      <label>
+        <span class=im>
+         <FONT COLOR="white">IMAGEN</FONT>  
+        <input name="avatar"
+          type="file" required
+          accept=".png,.jpg,.jpeg,.gif">
+        </span> 
+      </label>
+    </p>
+    <br>
+    <br>
+    <p>
+      <label>
+        <span class=al>
+          <FONT COLOR="white">   ALUMNO</FONT>
+        <select
+          name="alumnoId">
+          <option>
+            CARGANDO…
+          </span>
+          </option>
+        </select>
+      </label>
+    </p>
+    <br>
+    <br>
+    <div class="herramientas">
+      <a href="usuarios.html">
+        <FONT COLOR="white">CANCELAR</FONT> </a>
+      <button type="submit">
+        GUARDAR
+      </button>
+    </div>
+          <mi-progreso>
+          </mi-progreso>
+        </li>
+      </ul>
+    <mi-footer></mi-footer>
+  </form>
+  <script type="module"
+    src="js/CtrlUsuarioNuevo.js">
+    </script>
+</body>
+</html>

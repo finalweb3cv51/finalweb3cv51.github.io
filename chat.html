@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport"
+    content="width=device-width,
+       initial-scale=1.0">
+  <title>CHAT CONTACTOS</title>
+  <style>
+    .herramientas {
+margin-left: 40rem;
+padding-bottom: 2em;
+display: block;
+}
+.tes {
+  font-size: 120%;
+  text-align: center;
+  
+padding-bottom: 2em;
+display: block;
+}
+.primero {
+  font-size: 600%;
+font-size: 350%;
+text-align: center;
+font-family: arial;
+display: block;
+}
+  </style>
+  <script
+    src="https://www.gstatic.com/firebasejs/8.10.0/firebase-app.js">
+    </script>
+  <script
+    src="https://www.gstatic.com/firebasejs/8.10.0/firebase-auth.js">
+    </script>
+  <script
+    src="https://www.gstatic.com/firebasejs/8.10.0/firebase-firestore.js">
+    </script>
+  <script src="js/init.js">
+  </script>
+  <script type="module"
+    src="cmp/mi-nav.js">
+    </script>
+  <script type="module"
+    src="cmp/mi-footer.js">
+    </script>
+  <script type="module"
+    src="cmp/mi-progreso.js">
+    </script>
+  <link rel="stylesheet"
+    href="css/estilos.css">
+</head>
+
+<body>
+  <body background="plan.png"></body>
+  <mi-nav></mi-nav>
+  <form name="forma">
+    <header>
+    <br>
+    <br>
+    <br>
+    <br>
+    <span class=primero>
+    <b><FONT COLOR="black"> CHAT DE ACLARACIONES.</FONT></b> 
+    </span>
+    <br>
+    <span class=tes>
+   <b> <FONT COLOR="black"> ***Aqui los usuarios podran hacer uso de este chat, para cualquier duda u aclaracion.***</FONT></b>
+  </span>
+    <br>
+    <center> <img src="chat.png"> </center>
+    <br>
+    <br>
+      <div class="herramientas">
+        <input name="texto"
+          required
+          placeholder="Dudas y aclaraciones">
+        <button>ENVIAR</button>
+      </div>
+    </header>
+    <ul id="lista" class="lista">
+      <li>
+        <mi-progreso>
+        </mi-progreso>
+      </li>
+    </ul>
+    <mi-footer></mi-footer>
+  </form>
+  <script type="module"
+    src="js/CtrlChat.js">
+    </script>
+</body>
+</html>
